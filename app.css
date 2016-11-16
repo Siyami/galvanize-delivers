@@ -1,9 +1,14 @@
-
-
-#content{
-  text-align: center;
-  padding-top: 25%;
+#services{
+  /*text-align: center;*/
+  /*padding-top: 25%;*/
   background-image: url(img/hero.jpg);
   background-size: cover;
   background-position: center;
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#table{
+  background-color: white;
 }
