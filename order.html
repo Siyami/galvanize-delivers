@@ -31,7 +31,7 @@
 
     <div class="row">
 
-      <div id="products" class="col s12 m6">
+      <div id="products" class="col s12 m7">
         <div class="row">
           <div class="col s12 m6">
             <div class="card">
@@ -96,7 +96,7 @@
         </div>
       </div>
 
-      <div class="col s12 m6">
+      <div class="col s12 m5">
         <table class="striped" id="table">
           <thead>
             <tr>
@@ -112,15 +112,15 @@
             </tr> -->
             <tr>
               <td>Subtotal</td>
-              <td id="subTotal"></td>
+              <td id="subTotal">$0.00</td>
             </tr>
             <tr>
               <td>Tax</td>
-              <td></td>
+              <td id='tax'>$0.00</td>
             </tr>
             <tr>
               <td>Total</td>
-              <td></td>
+              <td id="total">$0.00</td>
             </tr>
           </tbody>
         </table>
@@ -130,24 +130,24 @@
             <div class="row">
               <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Name</label>
+                <input id="icon_fullName" type="text" class="validate" required>
+                <label for="icon_prefix">Full Name</label>
               </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
+                <input id="icon_telephone" type="tel" class="validate" required>
                 <label for="icon_telephone">Phone Number</label>
               </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">business</i>
-                <input id="icon_prefix" type="text" class="validate">
+                <input id="icon_address" type="text" class="validate" required>
                 <label for="icon_prefix">Adress</label>
               </div>
             </div>
 
 
             <div class="center-align">
-              <button class="waves-effect waves-light btn-large #0d47a1 blue darken-3" type="submit" name="placeOrder">PLACE ORDER</button>
+              <button id="placeOrder" class="waves-effect waves-light btn-large #0d47a1 blue darken-3" type="submit" name="placeOrder">PLACE ORDER</button>
             </div>
 
           </form>
